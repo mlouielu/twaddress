@@ -3,7 +3,6 @@
 import unittest
 import twaddress
 
-
 @unittest.skip('Just skip...')
 class CutTest(unittest.TestCase):
     def test_short_address(self):
@@ -22,5 +21,5 @@ class CutTest(unittest.TestCase):
 class GetTest(unittest.TestCase):
     def test_hard_address(self):
         expect = ('50F-60, No.30, Aly. 20, Ln. 10, Qixian 1st Rd., '
-                  'Xinxing Dist., Kaohsiung City 800, Taiwan (R.O.C.)')
+                  'Xinxing Dist., Kaohsiung City 800, Taiwan')
         self.assertEqual(twaddress.get('高雄市新興區七賢一路10巷20弄30號50樓之60'), expect)
