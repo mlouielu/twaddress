@@ -7,7 +7,7 @@ from twaddress import algo
 def _to_eng(cut_result):
     code, city, road, village, address = cut_result
 
-    result = [road, village, '%s %s' % (city, code), 'Taiwan (R.O.C.)']
+    result = [road, village, '%s %s' % (city, code), 'Taiwan']
     if address['巷']:
         result.insert(0, 'Ln. ' + address['巷'])
     if address['弄']:
